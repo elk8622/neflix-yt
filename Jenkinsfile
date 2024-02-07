@@ -67,7 +67,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d -p 8081:80 ellakumi/netflix:latest'
+                sh 'docker run -d -p 8181:80 ellakumi/netflix:latest'
             }
         }
         stage('Deploy to kubernets'){
